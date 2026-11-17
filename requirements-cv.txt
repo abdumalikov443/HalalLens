@@ -1,0 +1,7 @@
+# Computer vision + training (heavy). Needs Python 3.10-3.12.
+-r requirements.txt
+easyocr>=1.7
+torch>=2.2
+torchvision>=0.17
+bing-image-downloader>=1.1.2
+matplotlib>=3.8

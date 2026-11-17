@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HalalLens</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>Halal<span>Lens</span></h1>
+  <p>Koreyscha menyu yoki taomni suratga oling — tarkibi va halolligini bilib oling.</p>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" data-mode="menu">📋 Menyu</button>
+  <button class="tab" data-mode="dish">🍲 Taom</button>
+</nav>
+
+<main>
+  <label class="drop" id="drop">
+    <input type="file" id="file" accept="image/*" capture="environment" hidden>
+    <img id="preview" alt="" hidden>
+    <span id="hint">Rasm tanlang yoki suratga oling</span>
+  </label>
+  <button id="scan" disabled>Tekshirish</button>
+  <div id="status"></div>
+  <section id="results"></section>
+</main>
+
+<footer>⚠️ HalalLens halollik sertifikati emas. Shubha bo'lsa, restorandan so'rang.</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
